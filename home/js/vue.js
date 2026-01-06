@@ -1,5 +1,4 @@
-
-  const app = Vue.createApp({
+ const app = Vue.createApp({
    data() {
     return {
      message: "I don't know what to say"
