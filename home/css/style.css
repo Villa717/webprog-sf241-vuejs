@@ -1,6 +1,49 @@
-    #app {
-      display: inline-block;
-      padding: 10px;
-      font-size: x-large;
-      background-color: lightgreen;
-    }
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #faf7ff;
+    color: #2d1b4e;
+}
+
+h1 {
+    text-align: center;
+    color: #4b2c82;
+    margin-bottom: 40px;
+}
+
+.box {
+    background: white;
+    border: 2px solid #6a3fbf;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(106, 63, 191, 0.15);
+}
+
+.box h3 {
+    margin: 0 0 10px 0;
+    color: #6a3fbf;
+    font-size: 18px;
+}
+
+.box p,
+.box li {
+    font-size: 14px;
+    margin: 3px 0;
+    line-height: 1.4;
+}
+
+.box ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+footer {
+    margin-top: 50px;
+    background: #ece6f8;
+    padding: 20px;
+}
+
+footer strong {
+    color: #6a3fbf;
+}
