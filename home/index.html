@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <title>Personal Profile Web Page</title>
-     <link rel="stylesheet" href="css/flexbox-grid.css">
-     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/images.css">
+    <title>Personal Profile Web Page</title>
 
-
+    <link rel="stylesheet" href="css/flexbox-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/images.css">
 </head>
 <body>
 
@@ -24,8 +23,10 @@
         <div class="box">
             <h3>2 Education / Achievements</h3>
             <p><strong>Course:</strong></p>
-            <p>Bachelor of Science in Computer Science<br>
-               With Specialization in Cyber Security and Forensics</p>
+            <p>
+                Bachelor of Science in Computer Science<br>
+                With Specialization in Cyber Security and Forensics
+            </p>
         </div>
 
         <div class="box">
@@ -51,20 +52,24 @@
 
     </div>
 
+    
+    <div id="app2">
+        <div>
+            <img v-for="x in manyFoods" :src="x" :key="x">
+        </div>
+    </div>
+
     <footer>
         <p>Asia Pacific College</p>
         <p><strong>Happy New Year SF241!</strong></p>
     </footer>
 
-<div id="app2">
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-  <div>
-    <img v-for="x in manyFoods" v-bind:src="x">
-  </div>
+    <script src="js/images.js"></script>
 
-  <script src="js/images.js"></script>
-  
-</div>
 </body>
 </html>
+
 
