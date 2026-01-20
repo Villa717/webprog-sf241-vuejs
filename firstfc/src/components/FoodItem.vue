@@ -9,11 +9,12 @@
 export default {
   data() {
     return {
-      name: 'Chicken',
-      message: 'I like Butter Chickenz'
+      name: 'Steak',
+      message: 'It's tasty'
     }
   }
 };
 </script>
+
 
 <style></style>
