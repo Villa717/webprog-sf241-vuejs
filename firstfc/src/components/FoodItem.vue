@@ -1,5 +1,5 @@
 <template>
-  <div class="Steak">
+  <div class="food-card">
     <h2>{{ name }}</h2>
     <p>{{ message }}</p>
   </div>
@@ -16,14 +16,13 @@ export default {
 };
 </script>
 
-
-<style>
-.Steak{
-   border: dashed black 1px;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    background-color: rgba(154, 21, 21, 0.38);
-  }  
+<style scoped>
+.food-card {
+  border: dashed black 1px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightcoral; /* Changed color so you can see the difference */
+}
 </style>
 
