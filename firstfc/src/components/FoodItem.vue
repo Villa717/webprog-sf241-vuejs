@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       name: 'Steak',
-      message: 'It's tasty'
+      message: 'It is tasty'
     }
   }
 };
@@ -18,3 +18,4 @@ export default {
 
 
 <style></style>
+
