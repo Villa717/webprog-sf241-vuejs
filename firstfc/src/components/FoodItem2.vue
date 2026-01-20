@@ -19,10 +19,10 @@ export default {
 
 <style>
 .Foie Gras{
-     border: dashed black 1px;
+   border: dashed black 1px;
     display: inline-block;
     margin: 10px;
     padding: 10px;
-    background-color: rgba(217, 206, 252, 0.38);
+    background-color: rgba(126, 69, 166, 0.55);
   }  
-  </style>
+</style>
