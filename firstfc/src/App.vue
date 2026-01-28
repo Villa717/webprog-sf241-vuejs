@@ -5,17 +5,26 @@ import { supabase } from './lib/supabaseClient'
 const instruments = ref([])
 
 async function getInstruments() {
-  const { data } = await supabase.from('instruments').select()
+  const { data, error } = await supabase
+    .from('instruments')
+    .select()
+
+  if (error) {
+    console.error('Supabase error:', error)
+    return
+  }
+
   instruments.value = data
 }
 
-onMounted(() => {
-   getInstruments()
-})
+onMounted(getInstruments)
 </script>
 
 <template>
-  <ul>
-    <li v-for="instrument in instruments" :key="instrument.id">{{ instrument.name }}</li>
+  <ul v-if="instruments.length">
+    <li v-for="i in instruments" :key="i.id">
+      {{ i.name }}
+    </li>
   </ul>
+  <p v-else>No data loaded</p>
 </template>
